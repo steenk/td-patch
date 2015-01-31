@@ -64,6 +64,40 @@ var res = tdpatch(
 
 All patches has the properties "op" and "path", _add_, _test_, and _replace_ have the "value" property also, and _move_ and _copy_ have the "from" property also. In __res__ comes the transformed object `{ c: [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }` it it succeeds, otherwise __res__ will be __undefined__.
 
+## How to Use the Library
+
+In Node.js this is what to do:
+
+```js
+var tdpatch = require('td-patch');
+
+var res = tdpatch({}, [{op: 'add', path: '/foo', value: 'bar'}]);
+// res: {foo: 'bar'}
+```
+
+In the browser the prefered way is to use an AMD module loader, like Require.js, but without a module loader it will register a global method `window.tdpatch`.
+
+```js
+require(['td-patch'], function (tdpatch) {
+	
+	var tdpatch = require('td-patch');
+	var res = tdpatch({}, [{op: 'add', path: '/foo', value: 'bar'}]);
+	// res: {foo: 'bar'}
+});
+```
+
+## The Command Tool
+
+Installed in Node.js with the "-g" flag gives a command tool called "tdpatch".
+
+```sh
+tdpatch --help
+
+Usage: tdpatch <json file> <json patch file> [<output file>]
+```
+
+The __JSON Patch__ file has an array with one or more patches in it. It has to be in valid JSON format. The output file is optional.
+
 
 
 

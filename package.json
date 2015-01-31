@@ -1,0 +1,28 @@
+{
+  "name": "td-patch",
+  "version": "0.1.0",
+  "description": "A JSON Patch module for Node.js and the browser.",
+  "main": "td-patch.js",
+  "bin": {
+    "td-patch": "tdpatch.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steenk/td-patch.git"
+  },
+  "keywords": [
+    "json-patch"
+  ],
+  "author": "steenk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steenk/td-patch/issues"
+  },
+  "homepage": "https://github.com/steenk/td-patch"
+}
