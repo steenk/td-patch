@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "mocha",
-	"dist": "uglifyjs lib/td-patch.js > td-patch.js"
+    "dist": "uglifyjs lib/td-patch.js > td-patch.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/steenk/td-patch/issues"
   },
-  "homepage": "https://github.com/steenk/td-patch"
+  "homepage": "https://github.com/steenk/td-patch",
+  "devDependencies": {
+    "mocha": ">=2.1.0",
+    "uglifyjs": ">=2.3.6"
+  }
 }
