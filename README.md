@@ -50,11 +50,11 @@ While __JSON Pointer__ gives us a way to point to the inner data structures of a
 var res = tdpatch(
 	{"b": "bar", "c": [1, 2, 3, 4], "d": {"e": {"f": {} } } }, 
 	[
-	  {"op": "add", "path": "/a", "value": "steen"},
-	  {"op": "test",  "path": "/a",  "value": "steen"},
+	  {"op": "add", "path": "/a", "value": "foo"},
+	  {"op": "test",  "path": "/a",  "value": "foo"},
 	  {"op": "remove",  "path": "/b"},
 	  {"op": "remove",  "path": "/c/2"},
-	  {"op": "replace",  "path": "/a",  "value": "billi"},
+	  {"op": "replace",  "path": "/a",  "value": "bar"},
 	  {"op": "replace",  "path": "/d/e/f",  "value": "foobar"}
 	]
 );
