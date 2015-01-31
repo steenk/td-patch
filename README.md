@@ -62,7 +62,7 @@ var res = tdpatch(
 // res: { "c": [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }
 ```
 
-All patches has the properties "op" and "path", _add_, _test_, and _replace_ have the "value" property also, and _move_ and _copy_ have the "from" property also. In __res__ comes the transformed object `{ c: [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }` it it succeeds, otherwise __res__ will be __undefined__.
+All patches has the properties "op" and "path", _add_, _test_, and _replace_ have the "value" property also, and _move_ and _copy_ have the "from" property also. In __res__ comes the transformed object `{ c: [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }` if it succeeds, otherwise __res__ will be __undefined__.
 
 ## How to Use the Library
 
