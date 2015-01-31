@@ -1,4 +1,6 @@
-var tdpatch = require('../td-patch'),
+#!/usr/bin/env node
+
+var tdpatch = require('../lib/td-patch'),
 	fs = require('fs');
 
 if (process.argv.length < 4) {

@@ -10,7 +10,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+	"dist": "uglifyjs lib/td-patch.js > td-patch.js"
   },
   "repository": {
     "type": "git",

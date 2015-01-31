@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'link', '.' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'link' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.36
 4 verbose linkPkg /Users/steen/td-patch
@@ -33,7 +33,7 @@
 28 error including the npm and node versions, at:
 28 error     <http://github.com/npm/npm/issues>
 29 error System Darwin 14.0.0
-30 error command "/usr/local/bin/node" "/usr/local/bin/npm" "link" "."
+30 error command "/usr/local/bin/node" "/usr/local/bin/npm" "link"
 31 error cwd /Users/steen/td-patch
 32 error node -v v0.10.36
 33 error npm -v 1.4.28
