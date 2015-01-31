@@ -1,6 +1,6 @@
 {
   "name": "td-patch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A JSON Patch module for Node.js and the browser.",
   "main": "td-patch.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "dist": "uglifyjs lib/td-patch.js > td-patch.js"
+    "dist": "uglifyjs lib/td-patch.js -c -m --comments '/License/' > td-patch.js"
   },
   "repository": {
     "type": "git",
