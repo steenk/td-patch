@@ -3,7 +3,7 @@ A JSON Patch module for Node.js and the browser.
 
 Install it with
  ```sh
- npm install td-path -g
+ npm install td-patch -g
  ```
  or download the minimized version to be used in a browser.
 
@@ -92,7 +92,6 @@ Installed in Node.js with the "-g" flag gives a command tool called "tdpatch".
 
 ```sh
 tdpatch --help
-
 Usage: tdpatch <json file> <json patch file> [<output file>]
 ```
 
