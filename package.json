@@ -1,10 +1,10 @@
 {
   "name": "td-patch",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A JSON Patch module for Node.js and the browser.",
   "main": "td-patch.js",
   "bin": {
-    "td-patch": "./bin/tdpatch.js"
+    "tdpatch": "./bin/tdpatch.js"
   },
   "directories": {
     "test": "test"
