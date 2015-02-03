@@ -37,7 +37,7 @@ var json = {
 	pointer4 = "/bin/tdpath"
 ```
 
-A JSON structure consists of a tree of arrays and objects with key/value pairs. To access a key/value pair the key is used, and to access any item in an array an index number is used. __JSON Pointer__ use a combination of theses keys and index numbers with slashes dividing them. It looks like an Internet address, which is also the meaning.
+A JSON structure consists of a tree of arrays and objects with key/value pairs. To access a key/value pair the key is used, and to access any item in an array an index number is used. __JSON Pointer__ use a combination of these keys and index numbers with slashes dividing them. It looks like an Internet address, which is also the meaning.
 
 So what if a key has a "/" inside it? To prevent the key from being split into two invalid keys, it has to be escaped. The escape character used in __JSON Pointer__ is "~". So the "/" in the key name is replaced by "~1" in the __JSON Pointer__ string. That leaves the question of what if the key has a "~" in it? Well then it has to be replaced by "~0". These cases are not so common and all other valid characters in a JSON key goes without change.
 
