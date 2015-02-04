@@ -1,5 +1,5 @@
 # td-patch
-A JSON Patch module for Node.js and the browser.
+A JSON Patch module for Node.js, the browser, and the command line.
 
 Install it with
  ```sh
@@ -64,7 +64,7 @@ var res = tdpatch(
 
 All patches has the properties "op" and "path", _add_, _test_, and _replace_ have the "value" property also, and _move_ and _copy_ have the "from" property also. In __res__ comes the transformed object `{ c: [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }` if it succeeds, otherwise __res__ will be __undefined__.
 
-## Chain transform
+## Chain Transformation
 
 An alternative is to build up the transformation with chaining. If only the the first parameter is put into _tdpatch_, the patches can be applied with methods chained together and finally run by the _run_ method. In the parameter list of these methods, the first one is always the path.
 
@@ -87,8 +87,9 @@ var res = trans.remove("/b")
 
 console.log(res);
 ```
+With this method you can build up a long patchlist, and whenever you want to export your patches do it with `JSON.stringify(trans.patches)`, and you get a JSON string you can save for later use.
 
-## How to Use the Library
+## How to Get the Library
 
 In Node.js this is what to do:
 
