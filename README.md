@@ -5,7 +5,7 @@ Install it with
  ```sh
  npm install td-patch -g
  ```
- or download the [minimized](https://raw.githubusercontent.com/steenk/td-patch/master/td-patch.js) version to be used in a browser.
+ or download the <a href="https://raw.githubusercontent.com/steenk/td-patch/master/td-patch.js" download="td-patch.js">minimized</a> version to be used in a browser.
 
 * * *
 
