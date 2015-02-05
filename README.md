@@ -44,7 +44,7 @@ So what if a key has a "/" inside it? To prevent the key from being split into t
 ## JSON Patch
 
 While __JSON Pointer__ gives us a way to point to the inner data structures of a JSON document, __JSON Patch__ gives us a way to describe transformations of a JSON document. __JSON Patch__
- is itself a JSON document. It always consists of an array with one or many patches. Each patch will do one of six operations on the JSON document, _test_, _remove_, _add_, _replace_, _move_, and _copy_. The patches will be applied in sequence, so it is actually an activity list for a transformation. The transformation is atomic, meaning that if any of the operation steps fails, the whole transformation fails. Five of the six operations will try to transform the JSON in some way, but the _test_ operation just do a validation, which if it fails stops the whole transformation. Here is an example. It starts with the object `{"b": "bar", "c": [1, 2, 3, 4], "d": {"e": {"f": {} } } }` and transform it with a sequence of patches.
+ is itself a JSON document. It always consists of an array with one or many patches. Each patch will do one of six operations on the JSON document, __*test*__, __*remove*__, __*add*__, __*replace*__, __*move*__, and __*copy*__. The patches will be applied in sequence, so it is actually an activity list for a transformation. The transformation is atomic, meaning that if any of the operation steps fails, the whole transformation fails. Five of the six operations will try to transform the JSON in some way, but the _test_ operation just do a validation, which if it fails stops the whole transformation. Here is an example. It starts with the object `{"b": "bar", "c": [1, 2, 3, 4], "d": {"e": {"f": {} } } }` and transform it with a sequence of patches.
 
 ```js
 var res = tdpatch(
@@ -62,7 +62,7 @@ var res = tdpatch(
 // res: { "c": [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }
 ```
 
-All patches has the properties "op" and "path", _add_, _test_, and _replace_ have the "value" property also, and _move_ and _copy_ have the "from" property also. In __res__ comes the transformed object `{ c: [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }` if it succeeds, otherwise __res__ will be __undefined__.
+All patches has the properties "op" and "path", _add_, _test_, and _replace_ have the "value" property also, and _move_ and _copy_ have the "from" property also. In __res__ comes the transformed object `{ c: [ 1, 2, 4 ], d: { e: { f: 'foobar' } }, a: 'bar' }` if it succeeds, otherwise __res__ will be undefined.
 
 ## Chain Transformation
 
